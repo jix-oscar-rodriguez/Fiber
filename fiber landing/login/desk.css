@@ -1,0 +1,77 @@
+ body{
+    display: flex;
+   
+ }
+.acces-rigth {
+    display: block;
+    width: 50%;
+    background-color: rgb(123, 20, 241);
+  }
+  .acces-left {
+    width: 50%;
+    display: block;
+    margin-left: 5rem;
+    width: 50%;
+    display: block;
+ 
+  }
+  .acces-left .titulo {
+    margin-bottom: 2rem;
+  }
+  .acces-rigth  .tempate-container {
+   width: 30%;
+  }
+  .acces-rigth  .tempate-container img{
+    width: 10rem;
+  }
+  .acces-left .container-sign .container-sing-form p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .acces-left .container-sign .container-sing-form input {
+    width: 80%;
+    padding: 1.4rem;
+    margin-bottom: 2rem;
+  }
+  .terms {
+    margin-top: -3rem;
+    display: flex;
+    max-width: 35rem;
+    transition: 0.3s;
+  }
+  .container-sign a {
+    padding: 2rem 3rem;
+    width: 50%;
+    background-color: var(--botones);
+    color: var(--letras-botones);
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 1rem;
+  }
+  .container-sign .have-acount  {
+    margin-top: -3rem;
+    font-size: 1.3rem;
+    margin-bottom: 10rem;
+    margin-left: 4rem;
+  }
+  .acces-rigth .tempate-container{
+    width: 80%;
+    margin: 13rem auto;
+  }
+  .acces-rigth .tempate-container img{
+    width: 50rem;
+    border-radius: 1rem;
+  }
+  .acces-rigth .template-txt{
+    width: 70%;
+    margin: auto;
+    color: white;
+    margin-top: 2rem;
+  }
+  .acces-rigth .template-txt h1{
+    font-size: 3rem;
+  }
+  .acces-rigth .template-txt p{
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.727);
+  }

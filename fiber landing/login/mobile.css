@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap");
+:root {
+  --botones: #6200c4;
+  --botones-2: #7d02f8;
+  --titulos: black;
+  --parrafos: rgb(56, 55, 55);
+  --background: rgb(251, 251, 251);
+  --letras-botones: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  transition: 0.3s;
+}
+body {
+  background-color: white;
+  
+}
+.acces-rigth {
+  display: none;
+}
+.acces-left {
+  width: 80%;
+  display: block;
+  margin: 5rem auto 0 auto;
+}
+.acces-left .titulo {
+  max-width: 20rem;
+  margin-bottom: 4rem;
+}
+.acces-left .titulo h1 {
+  font-size: 2rem;
+}
+.acces-left .container-sign {
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+}
+.acces-left .container-sign h1 {
+  font-size: 3rem;
+}
+
+.acces-left .container-sign .container-sing-form p {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.acces-left .container-sign .container-sing-form input {
+  width: 100%;
+  padding: 1.4rem;
+  margin-bottom: 2rem;
+  border: 0;
+}
+.acces-left .container-sign .container-sing-form input {
+  border: 0.1rem solid rgba(137, 43, 226, 0.413);
+  border-radius: 1rem;
+}
+.terms {
+  display: flex;
+  max-width: 25rem;
+  transition: 0.3s;
+}
+
+.terms input {
+  display: none;
+  transition: 0.3s;
+}
+.terms label span {
+  transition: 0.3s;
+  display: inline-block;
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+  border: 0.1rem solid #6200c460;
+  border-radius: 0.5rem;
+}
+.terms p {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+}
+.terms p span {
+  color: var(--botones);
+  border-bottom: 3px solid var(--botones);
+}
+.terms label input:checked ~ span {
+  background: var(--botones);
+  transition: 0.3s;
+}
+.terms label span::before {
+  content: "";
+  position: absolute;
+  border: solid white;
+  border-width: 0 0.3em 0.3em 0;
+  transform: rotate(45deg);
+  width: 0.5em;
+  height: 1em;
+  left: 0.6em;
+  top: 0.25em;
+  transition: 0.3s;
+}
+.container-sign a {
+  padding: 2rem 5rem;
+  width: 100%;
+  background-color: var(--botones);
+  color: var(--letras-botones);
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 1rem;
+}
+.container-sign .have-acount  {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.container-sign .have-acount span{
+  color:var(--botones);
+  border-bottom: 3px solid var(--botones);
+}

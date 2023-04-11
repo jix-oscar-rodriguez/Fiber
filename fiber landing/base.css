@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap");
+:root {
+  --botones: #6200c4;
+  --botones-2: #7d02f8;;
+  --titulos: black;
+  --parrafos: rgb(56, 55, 55);
+  --background: rgb(251, 251, 251);
+  --letras-botones: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  transition: 0.3s;
+}
+body {
+  background-color: white;
+}
+
+/* BARRA DE NAVEGACIÓN  */
+header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 2.8rem 12%;
+  margin: 0 auto;
+  transition: all 0.5s ease;
+}
+header {
+  background-color: var(--background);
+}
+/* BARRA DE NAVEGACIÓN  logo */
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo i {
+  font-size: 2.4rem;
+  color: var(--botones);
+}
+header .logo span {
+  font-size: 2.3rem;
+  color: var(--titulos);
+  font-weight: bold;
+}
+/* BARRA DE NAVEGACIÓN center  */
+header .navbar {
+  display: flex;
+  gap: 3rem;
+  color: var(--titulos);
+}
+header .navbar a {
+  color: var(--titulos);
+  font-size: 1.4rem;
+  font-weight: 440;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+header .navbar .main {
+  display: flex;
+  align-items: center;
+}
+/* BARRA DE NAVEGACIÓN  user */
+header .main {
+  display: flex;
+}
+header .main a {
+  display: flex;
+  margin-right: 1.5rem;
+  margin-left: 1rem;
+  color: var(--titulos);
+  font-weight: 400;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+header .main .sign {
+  background-color: var(--botones);
+  padding: 0.7rem;
+  border-radius: 0.8rem;
+  color: var(--letras-botones);
+}
+header .main .user {
+  align-items: center;
+}
+header .main .user i {
+  position: relative;
+  color: var(--botones);
+  font-size: 2.6rem;
+}
+/* 
+   MOVILE NAV BAR */
+
+header .main #menu-icon {
+  position: relative;
+  font-size: 3rem;
+  color: var(--botones);
+  cursor: pointer;
+  z-index: 10001;
+  top: 0.8rem;
+  display: none;
+}
+/* <!-- SECTION 1/Create --> */
+.Create-fiber {
+  width: 100%;
+  background-color: var(--background);
+  
+}
+.Create {
+  max-width: 85%;
+  height: 0rem;
+  margin: 0rem auto;
+  display: flex;
+
+}
+
+.Create .Create-txt {
+  font-size: 2rem;
+  max-width: 60rem;
+  margin-top: 15rem;
+}
+.Create .Create-txt .score {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.9rem;
+
+}
+.Create .Create-txt .score .star span {
+  color: #fdc211;
+}
+
+.Create .Create-txt h1 {
+  font-size: 5.2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-bottom: 0.5rem;
+}
+
+.Create .Create-txt p {
+  color: var(--parrafos);
+  font-size: 1.9rem;
+  margin-bottom: 2.5rem;
+}
+
+
+.Create  .Create-txt .options .butoons-create a{
+  display: inline-block;
+  margin-bottom: 3rem;
+ margin-right: 3rem;
+ color: var(--botones);
+ transition: 0.3s;
+
+}
+.Create  .Create-txt .options .butoons-create .star{
+ color: var(--letras-botones);
+ background-color: var(--botones);
+ border-radius: 1rem;
+ font-weight: bold;
+ padding: 1rem;
+}
+.Create  .Create-txt .options .butoons-create .view{
+  border-bottom: 3px  solid var(--botones);
+  
+}
+.Create  .Create-txt .c-heck{
+  display: flex;
+  align-items: center;
+}
+.Create  .Create-txt .c-heck p{
+  font-size: 1.7rem;
+  margin-right: 2rem;
+  
+}
+.Create  .Create-txt .c-heck span img{
+  position: relative;
+  top: .4rem;
+}
+
+.Create .icon-create img {
+  position: relative;
+  max-width: 55rem;
+  top:5rem;
+}
+
+/* <!-- SECTION 2/services --> */
+
+.services{
+  margin-top: 80rem;
+  display: block;
+  max-width: 84%;
+ margin-left: auto;
+ margin-right:auto ;
+ margin-bottom: 7rem;
+}
+.services-txt{
+  width: 50%;
+}
+.services-txt .pregunt{
+  margin-top: 2.5rem;
+  color: var(--botones);
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+.services-txt .description{
+  font-size: 3rem;
+}
+
+.services-cards{
+  gap: 2rem;
+  margin-top: 5rem;
+  display: inline-block;
+  max-width: 31%;
+}
+.services-cards img{
+  max-width: 3.2rem;
+}
+.services-cards .service-paragraph{
+  font-size: 1.6rem;
+  line-height: 1;
+  margin-top: 1rem;
+  color: var(--parrafos);
+  padding-bottom: 4rem;
+}
+.services-cards .service-title{
+  font-size: 1.2rem;
+}
+
+/* <!-- SECTION 3/panel-img --> */
+.panel{
+  margin: 2rem auto 20rem auto;
+  max-width: 85%;
+  display: flex;
+  padding-right: 4rem;
+  background-color:var(--botones-2);
+  padding-left: 7rem;
+  padding-top: 5rem;
+  height: 42rem;
+  padding-bottom: 0.3rem;
+  border-radius: 1rem;
+}
+
+ 
+ .panel   img{
+  width:65rem;
+  height: 37rem;
+  border-radius: .5rem;
+ }
+ .panel  .panel-container-txt{
+  display: inline-block;
+  max-width: 40rem;
+  margin-top: auto;
+  margin-bottom: 5rem;
+  margin-right: 15rem;
+
+ }
+ .panel   .panel-container-txt h1{
+  font-size: 3rem;
+  color: var(--letras-botones);
+ }
+ .panel   .panel-container-txt p{
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  color: var(--parrafos);
+  padding-bottom: 3rem;
+  color: rgba(255, 255, 255, 0.859);
+  margin-bottom: 3rem;
+  }
+  .panel   .panel-container-txt a{
+    display: inline-block;
+    border-radius: 2rem;
+    padding: 2rem 4rem;
+    background-color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    transition: .3s;
+  }
+
+  /* <!-- SECTION 4/cards-comentarios --> */
+  .cards-coment{
+    width: 87%;
+    margin: 5rem auto;
+    display: flex;
+  }
+  .cards-coment .cards-coment-container{
+    border: .1rem solid rgb(181, 109, 247) ;
+    border-radius: 1.3rem;
+    max-width: 50rem;
+    margin-left: 3rem;
+    height:30rem ;
+    padding: 3rem;
+  }
+  .cards-coment .cards-coment-container .profile{
+     display: flex;
+     margin-bottom: 1rem;
+   
+  }
+  .cards-coment .cards-coment-container .profile h1{
+    color: var(--botones);
+  }
+  .cards-coment .cards-coment-container .coment-txt{
+    padding-top: .5rem;
+    margin-left:1rem ;
+  }
+  .cards-coment .cards-coment-container .coment-txt p{
+    font-size: 1.4rem;
+  }
+  .cards-coment .cards-coment-container .description-coment{
+   font-size: 1.5rem;
+   margin-bottom: 3rem;
+  }
+
+  .cards-coment .cards-coment-container a{
+    padding: 1rem 5.5rem;
+    border-radius: .5rem;
+    border: .1rem solid rgb(181, 109, 247) ;
+    align-items: center;
+    display: inline-block;
+    transition: .3s;
+  }
+
+  /* <!-- Footer --> */
+  footer .footer-panels{
+    display: flex;
+    width: 83%;
+    margin: 5rem auto 0 auto;
+    padding-top: 10rem;
+    padding-bottom: 7rem;
+  }
+  footer {
+    background-color: rgba(242, 236, 230, 0.615);
+  }
+  .footer-panels .footer-fiber{
+    display: block;
+  }
+  .footer-fiber{
+    display: block;
+    width: 50rem;
+    margin-right: 4rem;
+  }
+  .footer-fiber h1{
+    margin-bottom: 3rem;
+  }
+  .footer-fiber p{
+    margin-bottom: 2rem;
+    color: var(--parrafos);
+    font-size: 1.8rem;
+  }
+
+  .footer-sistemap{
+    display: block;
+    width: 30rem;
+  }
+  .footer-sistemap h1{
+    margin-bottom: 3rem;
+  }
+  .footer-sistemap p{
+    margin-bottom: 2rem;
+    color: var(--parrafos);
+    font-size: 1.8rem;
+  }
+
+  .footer-resocurces{
+    display: block;
+    width: 30rem;
+  }
+  .footer-resocurces h1{
+    margin-bottom: 3rem;
+  }
+  .footer-resocurces p{
+    margin-bottom: 2rem;
+    color: var(--parrafos);
+    font-size: 1.8rem;
+  }
+  .footer-company{
+    display: block;
+    width: 30rem;
+  }
+  .footer-company h1{
+    margin-bottom: 3rem;
+  }
+  .footer-company p{
+    margin-bottom: 2rem;
+    color: var(--parrafos);
+    font-size: 1.8rem;
+  }
+  .footer-portfolios{
+    display: block;
+    width: 30rem;
+  }
+  .footer-portfolios h1{
+    margin-bottom: 3rem;
+  }
+  .footer-portfolios p{
+    margin-bottom: 2rem;
+    color: var(--parrafos);
+    font-size: 1.8rem;
+  }
+
+@media (max-width: 1044px){
+  html{
+    font-size: 50%;
+    transition: 0.3s;
+  } 
+  /* <!-- SECTION 1/Create --> */
+  .Create .icon-create img {
+    max-width: 45rem;
+  }
+}
+
+  
+ 
+
+
